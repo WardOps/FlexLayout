@@ -22,7 +22,7 @@ android {
         sourceCompatibility rootProject.ext.sourceCompatibility
         targetCompatibility rootProject.ext.targetCompatibility
     }
-
+    namespace 'com.github.mmin18.flexlayout'
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -45,6 +45,10 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
+    }
+    buildFeatures {
+        renderScript true
+        aidl true
     }
 }
 
